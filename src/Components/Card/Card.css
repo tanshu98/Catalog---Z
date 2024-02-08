@@ -1,0 +1,34 @@
+h2 {
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 23%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    padding: 30px;
+    /* display: none; */
+  }
+  .card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+  .card img {
+    width: 400px;
+    height: 236px;
+  }
+  .card .image-details {
+    display: flex;
+    margin-top: 10px;
+    gap: 260px;
+  }
+  .date-span {
+    color: #6c757d;
+  }
+  .views-span {
+    color: #343a40;
+  }
+  
