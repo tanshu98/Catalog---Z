@@ -1,0 +1,54 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    background-color: #EEEE;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.Catalogs{
+    width: 50%;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+.footer-headings{
+    font-size: 1.4rem;
+    color: #009999;
+    margin-bottom: 1.5rem;
+}
+.catalog-para {
+    color: #999;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+.bootstrap-5{
+    color: #009999;
+}
+.links{
+   padding: 3rem;
+    width: 25%;
+}
+.links-title{
+    font-size: 1.4rem;
+    color: #009999;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.footer-links li {
+    list-style: none;
+    margin-bottom: 5px;
+    color: #999;
+    font-size: 0.95rem;
+}
+.icons {
+    /* display: flex; */
+    gap: 20px;
+}
