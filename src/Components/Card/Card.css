@@ -1,15 +1,21 @@
+
+
 h2 {
-    text-transform: uppercase;
-    color: #fff;
+    transition: 0.5s ease;
+    opacity: 0;
     position: absolute;
-    width: 70%;
-    height: 23%;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: #fff;
+    width: 70%;
+    height: 23%;
     border: 2px solid #fff;
     padding: 30px;
-    /* display: none; */
+  }
+  h2:hover{
+    opacity: 1;
   }
   .card {
     display: flex;
@@ -17,8 +23,16 @@ h2 {
     flex-direction: column;
   }
   .card img {
+    display: block;
+    opacity: 1;
     width: 400px;
     height: 236px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .card img:hover{
+    opacity: 0.6;
+    
   }
   .card .image-details {
     display: flex;
