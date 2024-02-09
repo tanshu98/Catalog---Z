@@ -4,7 +4,7 @@ import './Card.css';
 
 const Card = (props) => {
         const {eachCardDetails} = props
-        console.log(eachCardDetails);
+        // console.log(eachCardDetails);
         let {id, name, img, date, views} = eachCardDetails 
         return (
             <div>
