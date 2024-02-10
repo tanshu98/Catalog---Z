@@ -11,6 +11,9 @@
     padding: 7px;
     text-align: center;
   }
+  .fa-film-icon{
+    margin-right: 10px;
+  }
   .nav-left span {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -40,10 +43,31 @@
   a:nth-child(4):active {
     border-bottom: 4px solid #d63384;
   }
-  
+ .check-btn{
+  display: none;
+ } 
+ #checkbox {
+  display: none;
+ }
 
 @media(max-width: 990px) {
   .nav-right{
     display: none;
+  }
+  .check-btn {
+    transition: all 0.3s linear;
+    display: block;
+    font-size: 20px;
+    color: #343a40;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .check-btn:hover{
+    transform: rotate(90deg);
+  }
+}
+@media(max-width: 400px) {
+  .nav {
+    /* width: 115%; */
   }
 }

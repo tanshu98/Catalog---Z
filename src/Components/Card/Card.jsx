@@ -7,7 +7,7 @@ const Card = (props) => {
         // console.log(eachCardDetails);
         let {id, name, img, date, views} = eachCardDetails 
         return (
-            <div>
+            
               <div className="card">
                 <img src={img} alt="" />
                 <h2>{name}</h2>
@@ -16,8 +16,7 @@ const Card = (props) => {
                   <span className="views-span">{views}</span>
                 </div>
               </div>
-            </div>
           );
 };
 
-export default Card;
+export default Card;  

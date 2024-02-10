@@ -25,8 +25,8 @@ h2 {
   .card img {
     display: block;
     opacity: 1;
-    width: 400px;
-    height: 236px;
+    /* width: 320px;
+    height: 200px; */
     transition: .5s ease;
     backface-visibility: hidden;
   }
@@ -34,10 +34,11 @@ h2 {
     opacity: 0.6;
     
   }
-  .card .image-details {
+  .image-details {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 10px;
-    gap: 260px;
   }
   .date-span {
     color: #6c757d;
@@ -45,4 +46,36 @@ h2 {
   .views-span {
     color: #343a40;
   }
+
+
+  /* @media(min-width:300px) {
+    .card{
+      width: 100%;
+    }
+  } */
+
+   @media(min-width:730px) { /* Show 2 cards **/
+    .card{
+      width: 48.6%;
+    }
+  } 
+  @media(min-width:1015px) { /* Show 3 cards **/
+    .card{
+      width: 32%;
+    }
+  } 
+  @media(min-width:1215px) { /* Show 4 cards **/
+    .card{
+      width: 23.75%;
+    }
+  }
+  @media(min-width:1400px) { /* Show 4 cards **/
+    .card{
+      width: 23.9%;
+    }
+  }
+ 
+  
+  
+
   
