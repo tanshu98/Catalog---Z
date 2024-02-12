@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from '../../Components/Navbar/Navbar'
+import Section from '../../Components/Section/Section'
 
 const Photos = () => {
   return (
-    <div>Photos</div>
+    <div> 
+    <Navbar />
+      <Section />
+  </div> 
   )
 }
 
