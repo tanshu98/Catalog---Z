@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-main{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    margin-top: 60px;
+}
+.contact-address-location{
+    width: 32%;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.text-primary{
+    color: #009999;
+    margin-bottom: 3rem!important;
+    font-weight: 500;
+    line-height: 1.2;
+    opacity: 1;
+    font-size: 26px;
+}
+.contact-form {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+   
+    margin-bottom: 25px;
+}
+.contact-page-form {
+    padding: 10px 20px !important;
+    width: 100%;
+    height: auto;
+    color: #009999;
+    font-size: 1rem !important;
+}
+.contact-page-form::placeholder{
+    color: #009999 !important;
+}
+#select-form{
+    width: 100%;
+}
+#select-form select {
+    color: #009999;
+}
+.btn-primary{
+    background-color: #009999;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 50px 14px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: #198754;
+}
+.background-img{
+    width: 100%;
+    height: 500px;
+    background: url('../../assets/Images/about-us-page-examples-1-61fd8f9784626-sej-760x400\ \(1\).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
