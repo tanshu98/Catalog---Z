@@ -35,3 +35,9 @@ form {
     height: 50px;
     margin-left: -1px;
   }
+
+  @media(max-width: 420px) {
+    .hero-container{
+      width: 98%;
+    }
+  }

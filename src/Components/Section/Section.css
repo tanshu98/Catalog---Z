@@ -1,6 +1,8 @@
 .section-heading {
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 1.5rem;
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
@@ -19,15 +21,16 @@
   font-size: 24px;
   font-weight: 500;
 }
-.page-span {
+/* .page-span {
   font-size: 24px;
   font-weight: 500;
-}
+} */
 .section-heading span button {
-  /* padding: 5px;
-  margin: 5px; */
+  padding: 5px;
+  margin: 5px;
 }
 .card-container {
+  width: 100%;
   display: flex;
   /* justify-content: center; */
   flex-wrap: wrap;
@@ -38,6 +41,7 @@
   .section-heading{
     /* width: 1470px; */
     justify-content: center;
+    gap: 22px;
     align-items: center;
     text-align: center;
   }
