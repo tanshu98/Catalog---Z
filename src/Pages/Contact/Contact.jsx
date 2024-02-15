@@ -1,9 +1,18 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import './Contact.css';
+import { useNavigate } from "react-router-dom";
+
 
 
 const Contact = () => {
+  const navigate = useNavigate();
+
+  function submitContactData(e) {
+    e.preventDefault();
+    navigate('/home');
+    console.log('submitContactData');
+  }
   return (
     <div>
     <Navbar />
@@ -11,12 +20,12 @@ const Contact = () => {
       <div className="contact-address-location">
         <div className="contact">
           <span className="text-primary">Contact Page</span>
-          <form className='contact-form' >
+          <form className='contact-form' onSubmit={submitContactData}>
             <div className="form-group">
               <input type="text" name="name" className="contact-page-form" placeholder="Name" required />
             </div>
             <div className="form-group">
-              <input type="text" name="name" className="contact-page-form" placeholder="Email" required />
+              <input type="text" name="email" className="contact-page-form" placeholder="Email" required />
             </div>
             <div className="form-group" id="select-form">
             <select className="contact-page-form" >
@@ -30,7 +39,7 @@ const Contact = () => {
               <textarea rows={8} type="text" name="text" className="contact-page-form" placeholder="Message" required />
             </div>
             <div className="form-submit-btn">
-              <button className="btn-primary" type="submit">Send</button>
+              <button  className="btn-primary" type="submit">Send</button>
             </div>
           </form>
         </div>
