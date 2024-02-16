@@ -1,31 +1,44 @@
-import { React, useState } from "react";
-import { useNavigate } from "react-router-dom";
-
+import { useState } from "react";
 import "./Login.css";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
-function Login() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+const Login = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+//   const [data, setData] = useState({ name: "", password: "", email: "" });
+//   const { name, email, password } = data;
   const navigate = useNavigate();
 
-  const loginData = (e) => {
+//   const changeHandler = (e) => {
+//     setData({ ...data, [e.target.name]: [e.target.value] });
+//   };
+  const submitHandler = (e) => {
     e.preventDefault();
-    console.log(name, email);
-    console.log("Login");
+    let objData = {
+        name: name,
+        email: email,
+        password: password
+    };
+    // let {name, email, password} = objData
+    console.log(objData);
+    const data = localStorage.setItem('myObj', JSON.stringify(objData));
+    console.log(data);
     navigate("/home");
   };
+
   return (
     <div>
-      <div className="login-main">
-        <div className="login">
-          <span className="login-text">Login Form</span>
-          <form className="login-form" onSubmit={loginData}>
+      <div className="login-page-background-pic">
+        <div className="login-page">
+          <span className="login-heading">Login Page</span>
+          <form onSubmit={submitHandler} className="login-form">
             <div className="login-form-group">
               <input
+                onChange={(e)=>{setName(e.target.value)}}
                 type="text"
                 name="name"
                 value={name}
-                onChange={(e) => setName(e.target.value)}
                 className="login-page-form"
                 placeholder="Name"
                 required
@@ -33,26 +46,43 @@ function Login() {
             </div>
             <div className="login-form-group">
               <input
-                type="text"
+                onChange={(e)=> {setEmail(e.target.value)}}
+                type="email"
                 name="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
                 className="login-page-form"
                 placeholder="Email"
                 required
               />
             </div>
-            <div className="login-form-submit-btn">
-              <button  className="login-btn" type="submit">
+            <div className="login-form-group">
+              <input
+                onChange={(e)=> {setPassword(e.target.value)}}
+                type="password"
+                name="password"
+                value={password}
+                className="login-page-form"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div className="form-submit-btn">
+              <button
+                className="login-btn"
+                type="submit"
+                name="submit"
+              >
                 Send
               </button>
             </div>
           </form>
         </div>
-        <div className="login-background-img"></div>
+        {/* <div className="login-page-image">
+
+        </div> */}
       </div>
     </div>
   );
-}
+};
 
 export default Login;
